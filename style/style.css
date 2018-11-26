@@ -1,0 +1,383 @@
+/*Animacion titulo*/
+@font-face {
+  font-family: 'PressStart';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Press Start 2P'), local('PressStart2P-Regular'), url(http://themes.googleusercontent.com/static/fonts/pressstart2p/v2/8Lg6LX8-ntOHUQnvQ0E7o3dD2UuwsmbX3BOp4SL_VwM.woff) format('woff');
+}*
+
+#container{
+  width:500px;
+  margin:auto;
+}
+
+/*neeeeoooon*/
+.titulo{
+  text-align:center;
+  font-size:3em;
+  margin:20px 0 20px 0;
+}
+.ranking{
+  text-align:center;
+  font-size:1em;
+  margin:20px 0 20px 0;
+}
+a{
+  text-decoration:none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.titulo:nth-child(1) a{
+  color:#FF1177;
+  font-family:PressStart;
+}
+.ranking:nth-child(1) a{
+  color:#FF1177;
+  font-family:PressStart;
+}
+
+.titulo:nth-child(1) a{
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.ranking:nth-child(1) a{
+  -webkit-animation: neon1 1.5s ease-in-out infinite alternate;
+  -moz-animation: neon1 1.5s ease-in-out infinite alternate;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+.titulo a:hover{
+color:#ffffff;
+}
+
+.ranking a:hover{
+  color:#ffffff;
+}
+/*glow for webkit*/
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FF1177,
+               0 0 70px  #FF1177,
+               0 0 80px  #FF1177,
+               0 0 100px #FF1177,
+               0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FF1177,
+               0 0 35px #FF1177,
+               0 0 40px #FF1177,
+               0 0 50px #FF1177,
+               0 0 75px #FF1177;
+  }
+}
+
+/*glow for mozilla*/
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FF1177,
+               0 0 70px  #FF1177,
+               0 0 80px  #FF1177,
+               0 0 100px #FF1177,
+               0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FF1177,
+               0 0 35px #FF1177,
+               0 0 40px #FF1177,
+               0 0 50px #FF1177,
+               0 0 75px #FF1177;
+  }
+}
+
+/*glow*/
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff,
+               0 0 20px  #fff,
+               0 0 30px  #fff,
+               0 0 40px  #FF1177,
+               0 0 70px  #FF1177,
+               0 0 80px  #FF1177,
+               0 0 100px #FF1177,
+               0 0 150px #FF1177;
+  }
+  to {
+    text-shadow: 0 0 5px #fff,
+               0 0 10px #fff,
+               0 0 15px #fff,
+               0 0 20px #FF1177,
+               0 0 35px #FF1177,
+               0 0 40px #FF1177,
+               0 0 50px #FF1177,
+               0 0 75px #FF1177;
+  }
+}
+
+/*---------------------------*/
+.blink_me {
+  width: 10%;
+  height: 10%;
+  margin-top: 2%;
+  margin-left: 2%;
+  background: none;
+  border: none;
+  animation: blink 1.5s linear infinite!important;
+}
+.contador{
+  margin-left: 5%;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.posiciones{
+  font-size: 0.80em;
+  color: white;
+}
+#validacion{
+  color: red;
+}
+
+.table{
+  width: 100%;
+  text-align: center;
+}
+.ranking1{
+  float: left;
+  width: 40%;
+  /*border: 1px solid grey;*/
+}
+.ranking2{
+  float: right;
+  width: 40%;
+  /*border: 1px solid grey;*/
+}
+
+.contenedorCartaServer{
+  margin-top: 1%;
+  border: 5px solid grey;
+  text-align: center;
+  width: auto;
+  height: 200px;
+}
+
+img{
+  width: 60%;
+  /*height: 150px;*/
+  background-color: white;
+  /*trabajar en pequeño*/
+  /*width: 15px;
+  height: 15px;*/
+  border: 5px solid grey;
+}
+
+.BN:hover {
+  filter: grayscale(100%);
+}
+
+.contenedorCombo{
+  margin-top: 1%;
+  border: 5px solid grey;
+  height: auto;
+  float:right;
+  width: 37%;
+  color: white;
+}
+.contenedorCartasCliente{
+  margin-top: 1%;
+  border: 5px solid grey;
+  height: auto;
+  float:left;
+  width: 60%;
+  background-image: repeating-linear-gradient(#900C3F,   #ffb8d9  10%, #900C3F 20%);
+  /*trabajar en pequeño*/
+  /*width: 50%;*/
+}
+/*------------------------------------------------------------------*/
+/*Cartas Cliente*/
+.cartaCliente {
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+    margin-bottom: 75%;
+    position: relative;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+.cartaCliente div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.cartaCliente .frontal {
+  background: none;
+}
+
+.cartaCliente .trasera {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+.cartaCliente.girada {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+/*------------------------------------------------------------------*/
+/*Cartas Servidor*/
+.cartaServer {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    position: relative;
+    -webkit-transition: -webkit-transform 1s;
+    -moz-transition: -moz-transform 1s;
+    -o-transition: -o-transform 1s;
+    transition: transform 1s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform-origin: 50% 50%;
+}
+.frontalServer>img, .traseraServer>img{
+  width: 20%!important;
+}
+.cartaServer div {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.cartaServer .frontalServer {
+  background: none;
+}
+.cartaServer .traseraServer {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+.cartaServer.girada {
+    -webkit-transform: rotateY( 180deg );
+    -moz-transform: rotateY( 180deg );
+    -o-transform: rotateY( 180deg );
+    transform: rotateY( 180deg );
+}
+
+/*-----------------------------------------------------*/
+/*Modal*/
+.modal {
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   overflow: auto;
+   background-color: rgb(0,0,0);
+   background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+   background-color: #fefefe;
+   margin: 15% auto;
+   padding: 20px;
+   border: 1px solid #888;
+   width: 80%;
+}
+
+.close {
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+}
+
+/*******************************************************************************************************************/
+/*small*/
+@media only screen and (max-width: 700px){
+  body{
+    font-size:1.2em;
+  }
+  #container{
+    width:250px;
+    margin:auto;
+  }
+  .titulo{
+    text-align:center;
+    font-size:1.5em;
+    margin:20px 0 20px 0;
+  }
+  .contenedorCartasCliente{
+    /*margin-top: 1%;*/
+    border: 5px solid grey;
+    height: auto;
+    float:left;
+    width: 97%;
+    background-image: repeating-linear-gradient(#900C3F,   #ffb8d9  10%, #900C3F 20%);
+  }
+  .contenedorCombo{
+    margin-top: 1%;
+    border: 5px solid grey;
+    height: auto;
+    width: 97%;
+    color: white;
+    float: left;
+    /*trabajar en pequeño*/
+    /*width: 40%;*/
+  }
+  .cartaServer{
+    width: 100%;
+    margin-left: 1%;
+  }
+  .ranking{
+    font-size: small;
+  }
+  .posiciones{
+    font-size: small;
+  }
+}
